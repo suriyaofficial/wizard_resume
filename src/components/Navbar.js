@@ -1,26 +1,24 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Toolbar,
-  Tabs,
-  Tab,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { AppBar, Toolbar, Tabs, Tab, useMediaQuery, useTheme, } from "@mui/material";
 import { Link } from "react-router-dom";
 import Drawer from "./DrawerComp";
 import logo from "../assets/navlogo.jpg";
 import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  let navigate = useNavigate();
   const [value, setValue] = useState();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const logout = () => {
-    localStorage.clear();
+  const logout = async () => {
+    await localStorage.clear();
+    navigate("/");
     window.location.reload();
   };
 
   return (
+
     <>
       <Grid container spacing={0}>
         <Grid item xs={12}>
@@ -43,8 +41,9 @@ const Navbar = () => {
                     indicatorColor="secondary"
                   >
                     <Tab component={Link} to={"home"} label="Home" />
+                    <Tab component={Link} to={"templates"} label="Templates" />
                     <Tab component={Link} to={"about"} label="About" />
-                    <Tab label="Logout" onClick={logout} />
+                    <Tab component={Link} to={"/"} label="Logout" onClick={logout} />
                   </Tabs>
                 </>
               )}

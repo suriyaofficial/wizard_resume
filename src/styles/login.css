@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing:inherit; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to right, #0178af, #00b49c); */
+    background: linear-gradient(to right, #f5aafa, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-card {
+
+    Width: 300px;
+    /* Width: 400; */
+    height: 500px;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 2rem;
+    border-radius: 30px;
+    position: relative;
+    /* z-index: -1; */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+
+}
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+/* .login-card::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: #f5aafa85;
+    transform: rotate(-5deg);
+    z-index: -1;
+} */
+
+.logo,
+.footer {
+
+    text-align: center;
+
+}
+
+.logo {
+
+    font-size: calc(2rem*.8);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header {
+    text-align: center;
+
+}
+
+.login-form {
+    align-items: center;
+    justify-content: center;
+}
+
+.form-details {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    /* width: 250px; */
+}
+
+.form-details .icon {
+
+    position: absolute;
+    opacity: .5;
+    padding: calc(1rem*.3);
+    padding-left: 1rem;
+    color: black;
+
+
+}
+
+.form-details-other {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 5px;
+    padding-bottom: 20px;
+    font-size: calc(1rem*.8);
+}
+
+.login-card input[type=email],
+.login-card input[type=password] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background-color: rgb(224, 223, 223);
+
+}
+
+.login-card input:focus {
+    background-color: white;
+}
+
+.login-card input::placeholder {
+    text-transform: uppercase;
+    opacity: .8;
+
+}
+
+.login-card input[type=checkbox] {
+    width: 16px;
+    accent-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-form button {
+
+    padding: 10px;
+    width: 100%;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: calc(1rem*.3);
+    text-transform: uppercase
+}
+
+.login-form button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.footer {
+    padding-top: 5px;
+    color: blue;
+    font-size: calc(1rem*.8);
+
+}
+.footer:hover {
+text-decoration: underline;
+
+}
+
+.social-media {
+    text-align: center;
+    padding: calc(1rem*.5);
+
+}
+
+.social-media>div {
+    padding-bottom: calc(1rem*.5);
+}
+
+.socialdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.btn{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.social-media-btn  {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 100%;
+}
+
+.social-media-btn :hover {
+    scale: 1.1;
+    transition: 1ms;
+}
+
+.copyrights {
+    margin: 0px;
+    padding: .3rem;
+    bottom: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+
+}
+
+.chat {
+    right: 20px;
+    bottom: 50px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.chat .icon {
+    color: black;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 100px;
+}
+
+.chat .icon:hover {
+    scale: 1.1;
+}
+
+@media (max-width:765px) {}

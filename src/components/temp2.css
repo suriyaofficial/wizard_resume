@@ -1,0 +1,138 @@
+#page-temp2 {
+    margin: auto;
+    width: 210mm;
+    height: 270mm;
+    border: 2px solid #0074b8;
+    /* Dark blue border */
+    background-color: #f4f4f4;
+    /* Light gray background */
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.left-temp2 {
+    padding: 20px;
+    flex: 1;
+    background-color: #fff;
+    /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+.right-temp2 {
+    padding: 20px;
+    flex: 1;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #d2a11c;
+    /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+
+.name-temp2 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+.objective-temp2 {
+    font-size: 24px;
+    color: #0074b8;
+    margin: 10px 0;
+}
+
+.objective-des-temp2 {
+    font-size: 18px;
+}
+
+.uc-section-temp2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #d2a11c;;;
+    background-color: #f2f2f2;;
+    /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+}
+.uc-rtsection-temp2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #d2a11c;;
+    background-color: #f2f2f2;
+    /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.p-2-temp2 {
+    margin-bottom: 10px;
+    background-color: #fff;
+    /* White background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Slight shadow */
+}
+
+h3 {
+    margin: 0;
+}
+
+.jobTitle-temp2 {
+    font-weight: bold;
+}
+
+.jobTitle-temp2::after {
+    content: ":";
+}
+
+p {
+    margin: 0;
+}
+
+img.ppimg-temp2 {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.iconn-temp2 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.symbol-temp2 {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.iconn-temp2 p {
+    margin: 0;
+}
+
+/* ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+} */
+
+.hr-temp2 {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Additional styles can be added as needed */
+
+/* Example: Add a subtle gradient to the background of the page */
+#page-temp2 {
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+}

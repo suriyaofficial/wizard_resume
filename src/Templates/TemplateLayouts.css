@@ -1,0 +1,54 @@
+#image .imgThumb {
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 8px;
+}
+
+#image .imgThumb img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px 1px #555;
+    border-radius: 5px;
+}
+
+#image .imgThumb:hover img {
+    filter: grayscale(100%) blur(2px);
+    /* filter: blur(2px); */
+    /* -webkit-filter: grayscale(100%); */
+    transition: filter 0.5s ease-in-out;
+
+}
+
+#image .imgThumb span {
+    /* display: none; */
+    position: absolute;
+    top: 130px;
+    left: 50px
+}
+
+#image .imgThumb:hover span {
+    display: block;
+
+
+}
+
+#image .imgThumb span button {
+    background: rgb(72, 121, 255);
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: medium;
+    border: none;
+}
+
+#image .imgThumb span button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(1, 6, 255);
+
+}
+.temp{
+    filter: blur(2px);
+}
